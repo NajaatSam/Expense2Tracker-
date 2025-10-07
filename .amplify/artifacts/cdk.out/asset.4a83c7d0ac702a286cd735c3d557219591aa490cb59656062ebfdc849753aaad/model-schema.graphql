@@ -1,0 +1,5 @@
+type Expense @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  name: String
+  amount: Float
+}

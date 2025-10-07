@@ -1,0 +1,1211 @@
+{
+  "version": "45.0.0",
+  "artifacts": {
+    "amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "amplify:deployment-type": "sandbox",
+          "created-by": "amplify"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a55e767ddfe157206f8ce14c29365f5adf3f50df7c8ede682d0238e11c892bbd.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54.assets"
+      ],
+      "metadata": {
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "amplify:deployment-type",
+                "Value": "sandbox"
+              },
+              {
+                "Key": "created-by",
+                "Value": "amplify"
+              }
+            ]
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/deploymentType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deploymentType"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "region"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyAuth/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPool4BA7F805"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyAuth/UserPoolAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPoolAppClient2626C6F8"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyAuth/IdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPool3FDE84CC"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyAuth/authenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthUserPool21143C58Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthUserPool21143C58Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthUserPoolAppClient0DD01088Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthUserPoolAppClient0DD01088Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthIdentityPool0D5D4334Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthIdentityPool0D5D4334Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthauthenticatedUserRole4E2080F9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthauthenticatedUserRole4E2080F9Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthunauthenticatedUserRole6A996D01Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthunauthenticatedUserRole6A996D01Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/auth.NestedStack/auth.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "auth179371D7"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/userPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "userPoolId"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/webClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "webClientId"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/identityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "identityPoolId"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/authRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authRegion"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/allowUnauthenticatedIdentities": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "allowUnauthenticatedIdentities"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/signupAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "signupAttributes"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/usernameAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "usernameAttributes"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/verificationMechanisms": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "verificationMechanisms"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/passwordPolicyMinLength": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyMinLength"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/passwordPolicyRequirements": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyRequirements"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/mfaConfiguration": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaConfiguration"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/mfaTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaTypes"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/socialProviders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "socialProviders"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/oauthCognitoDomain": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthCognitoDomain"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/oauthScope": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthScope"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/oauthRedirectSignIn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignIn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/oauthRedirectSignOut": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignOut"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/oauthResponseType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthResponseType"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/oauthClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthClientId"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/groups": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "groups"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/GraphQLAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPI42A6FA33"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/GraphQLAPI/TransformerSchema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPITransformerSchemaFF50A789"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/GraphQLAPI/NONE_DS": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/GraphQLAPI/NONE_DS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPINONEDS684BF699"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableIsCompleteRoleF825222C"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleB4E71DEA"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkonEvent1DFC2ECC"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkisComplete2E51021B"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRole470BE899"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachine060600BC"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPIA53DA22EApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPIA53DA22EApiId"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent630EF638Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent630EF638Arn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyTableManager.NestedStack/AmplifyTableManager.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource86290833"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ShouldUsePayPerRequestBilling": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePayPerRequestBilling"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ShouldUsePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePointInTimeRecovery"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ExpenseTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Expense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ExpenseTable/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExpenseTable"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Expense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/CustomTableExpenseTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Expense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/GetAttExpenseTableStreamArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttExpenseTableStreamArn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/GetAttExpenseTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttExpenseTableName"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ExpenseIAMRole": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ExpenseIAMRole"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ExpenseIAMRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExpenseIAMRole6AD977E6"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ExpenseIAMRole"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ExpenseDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ExpenseTable"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ExpenseDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExpenseDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ExpenseTable"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/QuerygetExpenseauth0Function/QuerygetExpenseauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetExpenseauth0FunctionQuerygetExpenseauth0FunctionAppSyncFunctionF30409CF"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetExpenseauth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/QuerygetExpensepostAuth0Function/QuerygetExpensepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetExpensepostAuth0FunctionQuerygetExpensepostAuth0FunctionAppSyncFunction469B96B6"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetExpensepostAuth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/QueryGetExpenseDataResolverFn/QueryGetExpenseDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGetExpenseDataResolverFnQueryGetExpenseDataResolverFnAppSyncFunction851CEC7E"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGetExpenseDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/queryGetExpenseResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetExpenseResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.getExpense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/QuerylistExpensesauth0Function/QuerylistExpensesauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistExpensesauth0FunctionQuerylistExpensesauth0FunctionAppSyncFunction9B3B4BE4"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistExpensesauth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/QuerylistExpensespostAuth0Function/QuerylistExpensespostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistExpensespostAuth0FunctionQuerylistExpensespostAuth0FunctionAppSyncFunctionBC8CB2BC"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistExpensespostAuth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/QueryListExpensesDataResolverFn/QueryListExpensesDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryListExpensesDataResolverFnQueryListExpensesDataResolverFnAppSyncFunction49A7EA97"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryListExpensesDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/queryListExpensesResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ListExpenseResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.listExpenses"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationcreateExpenseinit0Function/MutationcreateExpenseinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateExpenseinit0FunctionMutationcreateExpenseinit0FunctionAppSyncFunction13417073"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateExpenseinit0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationcreateExpenseauth0Function/MutationcreateExpenseauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateExpenseauth0FunctionMutationcreateExpenseauth0FunctionAppSyncFunction91BA7CBE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateExpenseauth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationcreateExpensepostAuth0Function/MutationcreateExpensepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateExpensepostAuth0FunctionMutationcreateExpensepostAuth0FunctionAppSyncFunction4BF63675"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateExpensepostAuth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationCreateExpenseDataResolverFn/MutationCreateExpenseDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationCreateExpenseDataResolverFnMutationCreateExpenseDataResolverFnAppSyncFunction90287C1C"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationCreateExpenseDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/mutationCreateExpenseResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CreateExpenseResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.createExpense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationupdateExpenseinit0Function/MutationupdateExpenseinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateExpenseinit0FunctionMutationupdateExpenseinit0FunctionAppSyncFunction1D5702A1"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateExpenseinit0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationupdateExpenseauth0Function/MutationupdateExpenseauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateExpenseauth0FunctionMutationupdateExpenseauth0FunctionAppSyncFunction621469DD"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateExpenseauth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationupdateExpensepostAuth0Function/MutationupdateExpensepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateExpensepostAuth0FunctionMutationupdateExpensepostAuth0FunctionAppSyncFunction0CBCC099"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateExpensepostAuth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationUpdateExpenseDataResolverFn/MutationUpdateExpenseDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationUpdateExpenseDataResolverFnMutationUpdateExpenseDataResolverFnAppSyncFunctionA57E4FFF"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationUpdateExpenseDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/mutationUpdateExpenseResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateExpenseResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.updateExpense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationdeleteExpenseauth0Function/MutationdeleteExpenseauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteExpenseauth0FunctionMutationdeleteExpenseauth0FunctionAppSyncFunctionD622F394"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteExpenseauth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationdeleteExpensepostAuth0Function/MutationdeleteExpensepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteExpensepostAuth0FunctionMutationdeleteExpensepostAuth0FunctionAppSyncFunctionA0E9EBD9"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteExpensepostAuth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/MutationDeleteExpenseDataResolverFn/MutationDeleteExpenseDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationDeleteExpenseDataResolverFnMutationDeleteExpenseDataResolverFnAppSyncFunctionD6073898"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationDeleteExpenseDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/mutationDeleteExpenseResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteExpenseResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.deleteExpense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptiononCreateExpenseauth0Function/SubscriptiononCreateExpenseauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateExpenseauth0FunctionSubscriptiononCreateExpenseauth0FunctionAppSyncFunction8D177E04"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateExpenseauth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptiononCreateExpensepostAuth0Function/SubscriptiononCreateExpensepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateExpensepostAuth0FunctionSubscriptiononCreateExpensepostAuth0FunctionAppSyncFunction80F01BFF"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateExpensepostAuth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptionOnCreateExpenseDataResolverFn/SubscriptionOnCreateExpenseDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnCreateExpenseDataResolverFnSubscriptionOnCreateExpenseDataResolverFnAppSyncFunction88F175AF"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnCreateExpenseDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/subscriptionOnCreateExpenseResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateExpenseResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onCreateExpense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptiononUpdateExpenseauth0Function/SubscriptiononUpdateExpenseauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateExpenseauth0FunctionSubscriptiononUpdateExpenseauth0FunctionAppSyncFunctionEA13C61B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateExpenseauth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptiononUpdateExpensepostAuth0Function/SubscriptiononUpdateExpensepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateExpensepostAuth0FunctionSubscriptiononUpdateExpensepostAuth0FunctionAppSyncFunction3EDB63B5"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateExpensepostAuth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptionOnUpdateExpenseDataResolverFn/SubscriptionOnUpdateExpenseDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnUpdateExpenseDataResolverFnSubscriptionOnUpdateExpenseDataResolverFnAppSyncFunction8D36671F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnUpdateExpenseDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/subscriptionOnUpdateExpenseResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateExpenseResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onUpdateExpense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptiononDeleteExpenseauth0Function/SubscriptiononDeleteExpenseauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteExpenseauth0FunctionSubscriptiononDeleteExpenseauth0FunctionAppSyncFunctionCF172D45"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteExpenseauth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptiononDeleteExpensepostAuth0Function/SubscriptiononDeleteExpensepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteExpensepostAuth0FunctionSubscriptiononDeleteExpensepostAuth0FunctionAppSyncFunctionEAC3C516"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteExpensepostAuth0Function"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/SubscriptionOnDeleteExpenseDataResolverFn/SubscriptionOnDeleteExpenseDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnDeleteExpenseDataResolverFnSubscriptionOnDeleteExpenseDataResolverFnAppSyncFunctionD5BFCBAB"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnDeleteExpenseDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/subscriptionOnDeleteExpenseResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteExpenseResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onDeleteExpense"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/ExpenseOwnerDataResolverFn/ExpenseOwnerDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExpenseOwnerDataResolverFnExpenseOwnerDataResolverFnAppSyncFunction16BC0E2B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "ExpenseOwnerDataResolverFn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/expenseOwnerResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExpenseownerResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Expense.owner"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource91DD3E3COutputs.amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent630EF638Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource91DD3E3COutputsamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataAmplCD8195B5"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPIA53DA22EApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPIA53DA22EApiId"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPINONEDS4A12AD61Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPINONEDS4A12AD61Name"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputs.amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthauthenticatedUserRole4E2080F9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputsamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthauthenticatedUserRole4E2080F9Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputs.amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthunauthenticatedUserRole6A996D01Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputsamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthunauthenticatedUserRole6A996D01Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputs.amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthIdentityPool0D5D4334Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputsamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthIdentityPool0D5D4334Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/Expense.NestedStack/Expense.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataExpenseNestedStackExpenseNestedStackResource456F16BB"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucket9CCB4ACA"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketPolicyF1C1C548"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketAutoDeleteObjectsCustomResource437F26F5"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentAwsCliLayerE322F905"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB21775929"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleA41FC8C2"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleDefaultPolicyFF1C635B"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBC5D8AB21"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/modelIntrospectionSchemaBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketF566B665"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/modelIntrospectionSchemaBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketPolicy4DAB0D15"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/modelIntrospectionSchemaBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketAutoDeleteObjectsCustomResourceFE57309F"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/modelIntrospectionSchemaBucketDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketDeploymentAwsCliLayer13C432F7"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/modelIntrospectionSchemaBucketDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "modelIntrospectionSchemaBucketDeploymentCustomResource1536MiB104B97EC"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/AMPLIFY_DATA_GRAPHQL_ENDPOINTParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAGRAPHQLENDPOINTParameter1C2CBB16"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_BUCKET_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMABUCKETNAMEParameter47BF4F44"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/AMPLIFY_DATA_MODEL_INTROSPECTION_SCHEMA_KEYParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAMODELINTROSPECTIONSCHEMAKEYParameterB6AEAE8A"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/AMPLIFY_DATA_DEFAULT_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATADEFAULTNAMEParameterE7C23CC4"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputs.amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthUserPool21143C58Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputsamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthUserPool21143C58Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputs.amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthauthenticatedUserRole4E2080F9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputsamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthauthenticatedUserRole4E2080F9Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputs.amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthunauthenticatedUserRole6A996D01Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputsamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthunauthenticatedUserRole6A996D01Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/reference-to-amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputs.amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthIdentityPool0D5D4334Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authNestedStackauthNestedStackResourceD49E00B5Outputsamplifyexpensetrackernajaatidrissampongsandboxa51edf5c54authamplifyAuthIdentityPool0D5D4334Ref"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPIA53DA22EApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPIA53DA22EApiId"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPIA53DA22EGraphQLUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataGraphQLAPIA53DA22EGraphQLUrl"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data/amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB03B7E85CDestinationBucketArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyexpensetrackernajaatidrissampongsandboxa51edf5c54dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB03B7E85CDestinationBucketArn"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/data.NestedStack/data.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "data7552DF31"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/awsAppsyncApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiId"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/awsAppsyncApiEndpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiEndpoint"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/awsAppsyncAuthenticationType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAuthenticationType"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/awsAppsyncRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncRegion"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/amplifyApiModelSchemaS3Uri": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyApiModelSchemaS3Uri"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/awsAppsyncAdditionalAuthenticationTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAdditionalAuthenticationTypes"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "amplify-expensetracker-najaatidrissampong-sandbox-a51edf5c54"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  },
+  "minimumCliVersion": "2.1020.2"
+}

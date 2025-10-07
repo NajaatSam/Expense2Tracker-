@@ -1,0 +1,235 @@
+type Expense @aws_iam @aws_cognito_user_pools {
+  name: String
+  amount: Float
+  id: ID!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  owner: String
+}
+
+input AmplifyAIConversationTurnErrorInput {
+  errorType: String!
+  message: String!
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelSubscriptionStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  in: [String]
+  notIn: [String]
+}
+
+input ModelSubscriptionIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  in: [Int]
+  notIn: [Int]
+}
+
+input ModelSubscriptionFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  in: [Float]
+  notIn: [Float]
+}
+
+input ModelSubscriptionBooleanInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelSubscriptionIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  in: [ID]
+  notIn: [ID]
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelExpenseConnection @aws_iam @aws_cognito_user_pools {
+  items: [Expense]!
+  nextToken: String
+}
+
+input ModelExpenseFilterInput {
+  name: ModelStringInput
+  amount: ModelFloatInput
+  id: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelExpenseFilterInput]
+  or: [ModelExpenseFilterInput]
+  not: ModelExpenseFilterInput
+  owner: ModelStringInput
+}
+
+type Query {
+  getExpense(id: ID!): Expense @aws_iam @aws_cognito_user_pools
+  listExpenses(filter: ModelExpenseFilterInput, limit: Int, nextToken: String): ModelExpenseConnection @aws_iam @aws_cognito_user_pools
+}
+
+input ModelExpenseConditionInput {
+  name: ModelStringInput
+  amount: ModelFloatInput
+  and: [ModelExpenseConditionInput]
+  or: [ModelExpenseConditionInput]
+  not: ModelExpenseConditionInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  owner: ModelStringInput
+}
+
+input CreateExpenseInput {
+  name: String
+  amount: Float
+  id: ID
+}
+
+input UpdateExpenseInput {
+  name: String
+  amount: Float
+  id: ID!
+}
+
+input DeleteExpenseInput {
+  id: ID!
+}
+
+type Mutation {
+  createExpense(input: CreateExpenseInput!, condition: ModelExpenseConditionInput): Expense @aws_iam @aws_cognito_user_pools
+  updateExpense(input: UpdateExpenseInput!, condition: ModelExpenseConditionInput): Expense @aws_iam @aws_cognito_user_pools
+  deleteExpense(input: DeleteExpenseInput!, condition: ModelExpenseConditionInput): Expense @aws_iam @aws_cognito_user_pools
+}
+
+input ModelSubscriptionExpenseFilterInput {
+  name: ModelSubscriptionStringInput
+  amount: ModelSubscriptionFloatInput
+  id: ModelSubscriptionIDInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionExpenseFilterInput]
+  or: [ModelSubscriptionExpenseFilterInput]
+  owner: ModelStringInput
+}
+
+type Subscription {
+  onCreateExpense(filter: ModelSubscriptionExpenseFilterInput, owner: String): Expense @aws_subscribe(mutations: ["createExpense"]) @aws_iam @aws_cognito_user_pools
+  onUpdateExpense(filter: ModelSubscriptionExpenseFilterInput, owner: String): Expense @aws_subscribe(mutations: ["updateExpense"]) @aws_iam @aws_cognito_user_pools
+  onDeleteExpense(filter: ModelSubscriptionExpenseFilterInput, owner: String): Expense @aws_subscribe(mutations: ["deleteExpense"]) @aws_iam @aws_cognito_user_pools
+}
